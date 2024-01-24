@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/366d5c1647.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><i class="fas fa-circle-xmark" onclick="closemenu()"></i></li>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>Hi, iam <samp> Shubham</samp> <br> Kasabe from Pune, India </h1>
+                </div>
+        </div>
+
+    </div>
+<!-- ---------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Motivated and detail-oriented recent graduate with a Bachelor's degree,
+                        eager to launch a career as a Java developer. Possess a solid foundation 
+                        in Java programming, honed through coursework and hands-on projects. 
+                        Enthusiastic about applying my technical knowledge to solve real-world 
+                        problems and contribute to dynamic development teams. 
+                        A quick learner with a passion for software development and a commitment 
+                        to continuous self-improvement.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experinece')">Experinece</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contains active-tab" id="Skills">
+                        <ul>
+                            <li><samp>UI/UX</samp><br>Designing web/App Interface</li>
+                            <li><samp>Web Devlopment</samp><br>Web App Devlopment</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="Experinece">
+                        <ul>
+                            <li><samp>2023-Current</samp><br>Software-Engineer at Apponix Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="Education">
+                        <ul>
+                            <li><samp>2022</samp><br>Bachelor of Engineering | Pune University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------------Services----------------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>"I am a skilled web designer with proficiency in industry-standard 
+                        tools such as Adobe Creative Suite and Figma. My expertise extends 
+                        to creating visually appealing and responsive websites through a strong 
+                        command of HTML and CSS. I excel in both UI and UX design, incorporating 
+                        user-friendly interfaces and conducting research to enhance overall user
+                         experiences. With a keen eye for detail, I specialize in wireframing, 
+                         prototyping, and optimizing graphics for the web. My portfolio showcases
+                          successful projects where I've effectively applied design principles, 
+                          and I stay updated on the latest design trends. I bring a creative and
+                           collaborative approach to web design, ensuring a seamless fusion of 
+                           aesthetics and functionality."</p>
+                         <a href="#">Learn more </a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>"I am a dedicated UI/UX designer with a passion for creating 
+                    visually engaging and intuitive digital experiences. 
+                    Proficient in industry-leading design tools, I specialize in
+                     crafting user interfaces that prioritize usability and aesthetic 
+                     appeal. My UX design skills include conducting user research, 
+                     analyzing feedback, and implementing solutions that enhance the
+                      overall user journey. With a keen understanding of design 
+                      principles, I excel in wireframing, prototyping, and creating
+                       seamless interactions. Through a collaborative and iterative 
+                       design process, I strive to deliver products that not only
+                        meet user needs but exceed expectations in both form and 
+                        function."</p>
+                     <a href="#">Learn more </a>
+        </div>
+        <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>"I am a skilled app designer with a focus on creating 
+                innovative and user-centric mobile experiences. Proficient 
+                in utilizing design tools such as Adobe XD and Figma, I specialize
+                 in crafting visually appealing interfaces that prioritize 
+                 functionality and ease of use. My approach involves a keen 
+                 understanding of mobile design principles, including responsive
+                  layouts and intuitive navigation. I am dedicated to delivering 
+                  seamless app interactions, employing wireframing and prototyping
+                   techniques to refine user experiences. Through a combination of
+                    creativity and attention to detail, I aim to contribute to the 
+                    development of engaging and visually striking mobile 
+                    applications."</p>
+                 <a href="#">Learn more </a>
+    </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- ----------------------------------Portfolio------------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer"></div>
+                <h3> Social Media App</h3>
+                <p>L"In my capacity as software engineer at Apponix Technology, 
+                    I played a key role in shaping the user experience of a prominent 
+                    social media app. I spearheaded the design efforts, 
+                    focusing on creating an intuitive and visually appealing interface.
+                    Collaborating with cross-functional teams, I contributed to 
+                    the implementation of new features, elevating the app's 
+                    functionality. Actively engaged in user feedback sessions, 
+                    I iteratively improved the app's design based on data-driven insights.
+                     My creative input not only enhanced the overall user engagement 
+                     but also contributed to the app's positive reception, 
+                     reflecting my dedication to delivering impactful design solutions 
+                     in the dynamic landscape of social media applications."</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer"></div>
+                <h3> Music App</h3>
+                <p>As a music app developer, I leverage my expertise in software 
+                    development to create innovative and user-friendly 
+                    applications that enhance the music listening experience. 
+                    I have successfully contributed to the design, implementation, 
+                    and optimization of music apps, ensuring seamless functionality 
+                    and engaging user interfaces. My commitment to staying abreast of 
+                    industry trends and incorporating cutting-edge technologies 
+                    positions me as a valuable asset in the dynamic field of music app
+                     development.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer"></div>
+                <h3> Shopping App</h3>
+                <p>In my role as a shopping app developer, I specialize in crafting 
+                    robust and intuitive applications that facilitate seamless 
+                    online shopping experiences. With a strong command of programming 
+                    languages like Java, I contribute to the entire app development 
+                    lifecycle, from conceptualization to implementation and ongoing 
+                    optimization. My focus on user-centric design, performance 
+                    optimization, and integration of secure payment systems 
+                    underscores my commitment to delivering high-quality shopping 
+                    apps that meet both user expectations and industry standards.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------------------------------------------Contact------------------------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shubham.kasabe2023@gmail.com></i></p>
+                <p><i class="fa-solid fa-square-phone"></i>9370194470</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/shubham.kasabe.31/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/shubham_kasabe?igsh=eGV4b3A5bHI2ZGVu&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BL%2BKG2%2FGZQfOXZ7liEXlMVA%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Shubham. Made wtih <i class="fa-solid fa-heart"></i> by Apponix Technology</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontains = document.getElementsByClassName("tab-contains");
+    
+        function opentab(tabname) 
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontain of tabcontains)
+            {
+                tabcontain.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxuMpNaAIEqnaOLFBGVa5S2pPy3QivYfMrU3cMqE0uibMhYO6oZVhWBz1SFtOwPMoYl/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="massgae send successfully!!"
+            setTimeout(function()
+            {
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+    
+</body>
+</html> 
