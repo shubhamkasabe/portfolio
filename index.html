@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Kasabe - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/366d5c1647.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="menu-overlay"></div>
+    <div id="header">
+        <div class="animated-bg"></div>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text reveal">
+                <p>Software Engineer</p>
+                <h1>Hi, iam <samp>Shubham</samp> <br> Kasabe from Pune, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------about-------------------- -->
+    <div id="about" class="reveal">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Motivated and detail-oriented recent graduate with a Bachelor's degree,
+                        eager to launch a career as a Java developer. Possess a solid foundation 
+                        in Java programming, honed through coursework and hands-on projects. 
+                        Enthusiastic about applying my technical knowledge to solve real-world 
+                        problems and contribute to dynamic development teams. 
+                        A quick learner with a passion for software development and a commitment 
+                        to continuous self-improvement.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experinece')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contains active-tab" id="Skills">
+                        <div class="skill-item">
+                            <h3>UI/UX Design</h3>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Web Development</h3>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Java Development</h3>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contains" id="Experinece">
+                        <ul>
+                            <li><samp>2023-Current</samp><br>Software-Engineer at Apponix Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="Education">
+                        <ul>
+                            <li><samp>2022</samp><br>Bachelor of Engineering | Pune University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------Services----------------------------------------- -->
+    <div id="services" class="reveal">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>"I am a skilled web designer with proficiency in industry-standard 
+                        tools such as Adobe Creative Suite and Figma. My expertise extends 
+                        to creating visually appealing and responsive websites through a strong 
+                        command of HTML and CSS. I excel in both UI and UX design, incorporating 
+                        user-friendly interfaces and conducting research to enhance overall user
+                         experiences. With a keen eye for detail, I specialize in wireframing, 
+                         prototyping, and optimizing graphics for the web. My portfolio showcases
+                          successful projects where I've effectively applied design principles, 
+                          and I stay updated on the latest design trends. I bring a creative and
+                           collaborative approach to web design, ensuring a seamless fusion of 
+                           aesthetics and functionality."</p>
+                    <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>"I am a dedicated UI/UX designer with a passion for creating 
+                        visually engaging and intuitive digital experiences. 
+                        Proficient in industry-leading design tools, I specialize in
+                         crafting user interfaces that prioritize usability and aesthetic 
+                         appeal. My UX design skills include conducting user research, 
+                         analyzing feedback, and implementing solutions that enhance the
+                          overall user journey. With a keen understanding of design 
+                          principles, I excel in wireframing, prototyping, and creating
+                           seamless interactions. Through a collaborative and iterative 
+                           design process, I strive to deliver products that not only
+                            meet user needs but exceed expectations in both form and 
+                            function."</p>
+                        <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>"I am a skilled app designer with a focus on creating 
+                        innovative and user-centric mobile experiences. Proficient 
+                        in utilizing design tools such as Adobe XD and Figma, I specialize
+                         in crafting visually appealing interfaces that prioritize 
+                         functionality and ease of use. My approach involves a keen 
+                         understanding of mobile design principles, including responsive
+                          layouts and intuitive navigation. I am dedicated to delivering 
+                          seamless app interactions, employing wireframing and prototyping
+                           techniques to refine user experiences. Through a combination of
+                            creativity and attention to detail, I aim to contribute to the 
+                            development of engaging and visually striking mobile 
+                            applications."</p>
+                        <a href="#">Learn more </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------Portfolio------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>In my capacity as software engineer at Apponix Technology, 
+                            I played a key role in shaping the user experience of a prominent 
+                            social media app. I spearheaded the design efforts, 
+                            focusing on creating an intuitive and visually appealing interface.
+                            Collaborating with cross-functional teams, I contributed to 
+                            the implementation of new features, elevating the app's 
+                            functionality.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>As a music app developer, I leverage my expertise in software 
+                            development to create innovative and user-friendly 
+                            applications that enhance the music listening experience. 
+                            I have successfully contributed to the design, implementation, 
+                            and optimization of music apps.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>In my role as a shopping app developer, I specialize in crafting 
+                            robust and intuitive applications that facilitate seamless 
+                            online shopping experiences. With a strong command of programming 
+                            languages like Java, I contribute to the entire app development 
+                            lifecycle.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------------------------Pricing Section------------------------------ -->
+    <section id="pricing">
+        <div class="container">
+            <h1 class="sub-title">Project Pricing</h1>
+            <div class="pricing-list">
+                <div class="pricing-card" data-aos="fade-up">
+                    <h2>Basic</h2>
+                    <div class="price">₹15,000</div>
+                    <ul>
+                        <li>Single Page Website</li>
+                        <li>Responsive Design</li>
+                        <li>Contact Form</li>
+                        <li>Basic SEO Setup</li>
+                        <li>1 Month Support</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Professional</h2>
+                    <div class="price">₹50,000</div>
+                    <ul>
+                        <li>Multi-page Website</li>
+                        <li>Responsive Design</li>
+                        <li>Advanced Contact Form</li>
+                        <li>SEO Optimization</li>
+                        <li>Social Media Integration</li>
+                        <li>3 Months Support</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Premium</h2>
+                    <div class="price">₹90,000</div>
+                    <ul>
+                        <li>Custom Web Application</li>
+                        <li>Advanced Features</li>
+                        <li>Database Integration</li>
+                        <li>Full SEO Package</li>
+                        <li>Payment Gateway</li>
+                        <li>6 Months Support</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------------Reviews Section------------------------------ -->
+    <section id="reviews">
+        <div class="container">
+            <h1 class="sub-title">Client Reviews</h1>
+            <div class="reviews-list">
+                <div class="review">
+                    <div class="review-header">
+                        <img src="images/reviews/review1.jpg" alt="Sarah Johnson" class="review-img">
+                        <div class="review-info">
+                            <h3>Sarah Johnson</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Working with this team was an absolute pleasure. They delivered my website exactly as I envisioned, with attention to every detail. The communication was excellent throughout the project."</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="images/reviews/review2.jpg" alt="Michael Chen" class="review-img">
+                        <div class="review-info">
+                            <h3>Michael Chen</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The level of professionalism and expertise shown in my project was outstanding. They not only met but exceeded my expectations. Highly recommended!"</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="images/reviews/review3.jpg" alt="Emily Rodriguez" class="review-img">
+                        <div class="review-info">
+                            <h3>Emily Rodriguez</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"I'm extremely satisfied with the work done on my website. The team was responsive, creative, and delivered a product that perfectly represents my brand."</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="images/reviews/review4.jpg" alt="David Wilson" class="review-img">
+                        <div class="review-info">
+                            <h3>David Wilson</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The attention to detail and creative solutions provided were exceptional. My business has seen significant growth since the website launch."</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="images/reviews/review5.jpg" alt="Lisa Thompson" class="review-img">
+                        <div class="review-info">
+                            <h3>Lisa Thompson</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Professional, timely, and incredibly talented. The team went above and beyond to ensure my website was exactly what I needed."</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="images/reviews/review6.jpg" alt="James Anderson" class="review-img">
+                        <div class="review-info">
+                            <h3>James Anderson</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The team's expertise in web development is unmatched. They delivered a website that perfectly captures my brand's essence."</p>
+                </div>
+            </div>
+            
+            <div class="review-form">
+                <h2>Leave a Review</h2>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <div class="rating-select">
+                            <i class="fas fa-star" data-rating="1"></i>
+                            <i class="fas fa-star" data-rating="2"></i>
+                            <i class="fas fa-star" data-rating="3"></i>
+                            <i class="fas fa-star" data-rating="4"></i>
+                            <i class="fas fa-star" data-rating="5"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Review</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for your review.</p>
+            <button class="close-btn" onclick="closeSuccessMessage()">Close</button>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------Contact------------------------------------------ -->
+    <div id="contact" class="reveal">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shubham.kasabe2023@gmail.com</i></p>
+                    <p><i class="fa-solid fa-square-phone"></i>9370194470</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/shubham.kasabe.31/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/shubham_kasabe?igsh=eGV4b3A5bHI2ZGVu&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BL%2BKG2%2FGZQfOXZ7liEXlMVA%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Shubham. Made wtih <i class="fa-solid fa-heart"></i> by Apponix Technology</p>
+        </div>
+    </div>
+
+    <script>
+        // Loading Animation
+        window.addEventListener('load', () => {
+            const loading = document.querySelector('.loading');
+            loading.classList.add('fade-out');
+        });
+
+        // Scroll Reveal Animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Initial check
+
+        // Menu functionality
+        const menuIcon = document.querySelector('.fa-solid');
+        const menuList = document.querySelector('nav ul');
+        const menuOverlay = document.querySelector('.menu-overlay');
+        const menuLinks = document.querySelectorAll('nav ul li a');
+
+        // Toggle menu
+        function toggleMenu() {
+            menuList.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.style.overflow = menuList.classList.contains('active') ? 'hidden' : '';
+            
+            // Toggle menu icon
+            if (menuList.classList.contains('active')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            } else {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            }
+        }
+
+        // Close menu
+        function closeMenu() {
+            menuList.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+        }
+
+        // Event listeners
+        menuIcon.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // Close menu when clicking menu links
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && menuList.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+
+        // Prevent menu from closing when clicking inside menu
+        menuList.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Scroll handling
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollProgress = document.querySelector('.scroll-progress');
+            const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = window.scrollY;
+            const progress = (scrolled / scrollable) * 100;
+            scrollProgress.style.width = progress + '%';
+        });
+
+        // Back to Top Button
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate skill bars on scroll
+        function animateSkills() {
+            const skillBars = document.querySelectorAll('.skill-progress-bar');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 200);
+            });
+        }
+
+        // Call animateSkills when skills tab is opened
+        function opentab(tabname) {
+            const tablinks = document.getElementsByClassName("tab-links");
+            const tabcontents = document.getElementsByClassName("tab-contains");
+            
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+            if(tabname === 'Skills') {
+                animateSkills();
+            }
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxuMpNaAIEqnaOLFBGVa5S2pPy3QivYfMrU3cMqE0uibMhYO6oZVhWBz1SFtOwPMoYl/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="massgae send successfully!!"
+                setTimeout(function()
+                {
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        // Review Form Submission
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Show success message
+            document.getElementById('successMessage').classList.add('show');
+            // Reset form
+            this.reset();
+        });
+
+        // Close success message
+        function closeSuccessMessage() {
+            document.getElementById('successMessage').classList.remove('show');
+        }
+
+        // Rating selection
+        const stars = document.querySelectorAll('.rating-select .fa-star');
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-rating');
+                stars.forEach(s => {
+                    s.classList.remove('active');
+                    if (s.getAttribute('data-rating') <= rating) {
+                        s.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
